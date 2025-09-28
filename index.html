@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Mr. M. B. Onakoya</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;color:#333}
+
+/* HERO */
+.hero{
+  background:#c1121f; /* Christmas red */
+  color:#fff;text-align:center;
+  padding:100px 20px 50px;
+  position:relative;overflow:hidden;
+}
+.hero h1{
+  font-family:'Great Vibes',cursive;
+  font-size:3rem;text-shadow:0 0 10px #fff,0 0 20px gold;
+  animation:glow 2s ease-in-out infinite alternate;
+}
+@keyframes glow{
+  from{text-shadow:0 0 10px #fff,0 0 20px gold}
+  to{text-shadow:0 0 20px #fff,0 0 40px gold}
+}
+.hero p{margin-top:15px;font-size:1.2rem}
+.white-light{
+  position:absolute;top:50%;left:-100%;width:200%;height:8px;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,0.8),transparent);
+  transform:rotate(-5deg);
+  animation:slideLight 4s linear infinite;
+}
+@keyframes slideLight{
+  0%{left:-100%}100%{left:100%}
+}
+#permission-box {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+    #permission-box div {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+    #permission-box button {
+      padding: 10px 20px;
+      margin-top: 15px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #ff69b4;
+      border: none;
+      color: white;
+      border-radius: 8px;
+    }
+
+/* SLIDESHOW */
+.slideshow-container{
+  max-width:320px;height:450px;margin:30px auto;position:relative;
+  border:8px solid #fff;border-radius:20px;overflow:hidden;
+  box-shadow:0 0 20px rgba(0,0,0,0.4);
+}
+.slide{display:none;width:100%;height:100%;object-fit:cover;}
+.show{display:block;animation:fade 1s ease-in-out;}
+@keyframes fade{from{opacity:0.4}to{opacity:1}}
+/* falling stars/cakes around slideshow */
+.falling{
+  position:fixed;top:-50px;animation:fall 10s linear infinite;
+  font-size:1.5rem;pointer-events:none;z-index:1000;
+}
+@keyframes fall{
+  0%{transform:translateY(-50px) rotate(0deg);}
+  100%{transform:translateY(100vh) rotate(360deg);}
+}
+
+/* WISH SECTIONS */
+section{padding:50px 20px;text-align:center}
+section img{
+  width:280px;height:380px;object-fit:cover;border-radius:15px;
+  border:6px solid #fff;box-shadow:0 0 10px rgba(0,0,0,0.3);margin-bottom:15px;
+}
+section h2{font-family:'Great Vibes',cursive;font-size:2.2rem;margin-bottom:15px;color:#222}
+section p{max-width:700px;margin:0 auto;font-size:1rem;line-height:1.6}
+
+.wish1{background:linear-gradient(to bottom right,#ffb347,#ffcc33);}
+.wish2{background:linear-gradient(to bottom right,#8fd3f4,#84fab0);}
+.wish3{background:linear-gradient(to bottom right,#fbc2eb,#a6c1ee);}
+
+/* FOOTERS */
+.footer1{
+  background:#ff69b4;color:#fff;text-align:center;
+  padding:25px 20px;font-family:'Great Vibes',cursive;font-size:1.6rem;position:relative;
+}
+.footer1 span.firework{display:inline-block;animation:blink 1s infinite alternate;color:gold;}
+@keyframes blink{from{opacity:.3}to{opacity:1}}
+
+.footer2{
+  background:linear-gradient(90deg,#5a3ec8,#7b4de2);
+  color:#fff;text-align:center;padding:20px;
+}
+.footer2 button{
+  background:#fff;color:#5a3ec8;padding:10px 20px;
+  border:none;border-radius:25px;cursor:pointer;margin-top:10px;font-weight:600;
+}
+.footer2 button:hover{background:#f1f1f1}
+
+@media(max-width:768px){
+  section img{width:90%;height:auto}
+}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="white-light"></div>
+  <h1>Happy Birthday<br>MR. M. B. ONAKOYA</h1>
+  <p>Celebrating a wonderful man on his special day 🎉🎂</>
+</div>
+
+<!-- SLIDESHOW -->
+<div class="slideshow-container">
+  <img src="image1.jpg" class="slide show">
+  <img src="image2.jpg" class="slide">
+  <img src="image3.jpg" class="slide">
+</div>
+
+<!-- Wishes with images -->
+<section class="wish1">
+  <img src="wish1.jpg" alt="Wish 1">
+  <h2>Wishing You Joy</h2>
+  <p>You've been a blessing to many, leading with love and wisdom. May this new year bring endless laughter and peace.</p>
+</section>
+
+<section class="wish2">
+
+  <img src="wish2.jpg" alt="Wish 2">
+  <h2>Impacting Lives</h2>
+  <p>Your kindness and dedication have touched countless lives. May your path continue to shine brighter with God’s favor.</p>
+</section>
+
+<section class="wish3">
+  <img src="wish3.jpg" alt="Wish 3">
+  <h2>Many Happy Returns</h2>
+  <p>Here’s to a year full of great health, divine protection, and all your heart’s desires. You deserve the very best!</p>
+</section>
+
+<!-- Footers -->
+<div class="footer1">
+  Made with ❤️ just for you, <strong>28th September</strong> is the code <span class="firework">🎆🎇</span>
+</div>
+<!-- Footer courtesy -->
+<div class="footer2">
+  Courtesy: Your Loving Children ❤️
+  <br>
+  <a
+    class="contact-btn"
+    href="https://wa.me/2348035136884?text=Hi%2C%20I%20have%20some%20wishes%20for%20you"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Send Wishes
+  </a>
+</div>
+
+ <!-- AUDIO TAG: make sure birthday.mp3 is in the same folder as this HTML file -->
+<audio id="birthday-audio" src="birthday.MP3"></audio>
+
+<!-- PERMISSION BOX -->
+<div id="permission-box">
+  <div>
+    <h2>🎉 Allow the birthday song to play?</h2>
+    <button id="allow-btn">Allow</button>
+  </div>
+</div>
+
+<!-- JS: slideshow + falling effects -->
+<script>
+let slideIndex=0;
+const slides=document.querySelectorAll(".slide");
+function showSlides(){
+  slides.forEach(s=>s.classList.remove("show"));
+  slideIndex=(slideIndex+1>slides.length)?1:slideIndex+1;
+  slides[slideIndex-1].classList.add("show");
+  setTimeout(showSlides,2500);
+}
+showSlides();
+
+// falling stars/cakes
+const symbols=["✨","⭐","🎂","💫","🌟","🍰"];
+setInterval(()=>{
+  const span=document.createElement("span");
+  span.className="falling";
+  span.innerHTML=symbols[Math.floor(Math.random()*symbols.length)];
+  span.style.left=Math.random()*100+"vw";
+  span.style.fontSize=Math.random()*1.5+1+"rem";
+  span.style.animationDuration=(Math.random()*5+5)+"s";
+  document.body.appendChild(span);
+  setTimeout(()=>span.remove(),10000);
+},500);
+
+// Wait until the page is fully loaded
+  window.addEventListener("DOMContentLoaded", function () {
+    const allowButton = document.getElementById("allow-btn");
+    const audio = document.getElementById("graduation-audio");
+    const popup = document.getElementById("permission-box");
+
+    allowButton.addEventListener("click", function () {
+      audio.play().then(() => {
+        popup.style.display = "none";
+      }).catch(error => {
+        alert("Couldn't play the graduation audio. Check console.");
+        console.error(error);
+      });
+    });
+  });
+
+</script>
+
+</body>
+</html>
